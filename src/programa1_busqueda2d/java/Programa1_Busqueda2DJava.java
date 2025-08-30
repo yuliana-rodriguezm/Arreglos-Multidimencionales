@@ -18,17 +18,16 @@ public class Programa1_Busqueda2DJava {
             System.out.println("El valor " + valorBuscado + " no se encontró en la matriz.");
         }
     }
-
-    // Método que busca un valor en una matriz 2D
+    
     public static int[] buscarValor(int[][] matriz, int valor) {
         for (int fila = 0; fila < matriz.length; fila++) {
             for (int col = 0; col < matriz[fila].length; col++) {
                 if (matriz[fila][col] == valor) {
-                    return new int[]{fila, col}; // devuelve la posición
+                    return new int[]{fila, col};
                 }
             }
         }
-        return new int[]{-1, -1}; // no encontrado
+        return new int[]{-1, -1};
     }
 }
 
